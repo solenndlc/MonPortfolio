@@ -1,0 +1,92 @@
+.press-section { 
+  padding-top: 100px; /* Augmenté pour donner de l'espace au titre absolu */
+  padding-bottom: 80px; 
+}
+
+/* Grille principale */
+.press-grid {
+  position: relative; /* Indispensable pour calibrer le absolu du titre */
+  display: grid;
+  grid-template-columns: 1fr 2.3fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* ── Titre abaissé pour entrer parfaitement dans le creux ── */
+.press-title { 
+  position: absolute;
+  top: -40px;  /* Modifié (au lieu de -120px) pour descendre le titre dans le creux */
+  left: 33%;   
+  width: auto;
+  z-index: 10;
+  pointer-events: none; 
+  white-space: nowrap;
+}
+
+.press-cover-col { 
+  display: flex; 
+  flex-direction: column; 
+}
+
+.press-cover { 
+  width: 100%; 
+  object-fit: contain; 
+}
+
+/* ── Ajustement de la zone droite globale ── */
+.press-right-area {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: start; /* Garde l'alignement vers le haut pour les deux sous-colonnes */
+  margin-top: 105px;  /* Conserve la descente des 4 images du centre */
+}
+
+.press-spreads-four {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* ── Force la remontée spécifique de la barre latérale (Desc + 5e image) ── */
+.press-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: -105px; /* Compense la marge parente pour remonter le bloc au niveau du titre */
+}
+
+.press-spread {
+  width: 100%;
+  object-fit: contain;
+}
+
+.press-fifth-spread {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.label-cyan {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: 'Pixelify Sans', monospace;
+}
+
+.press-desc {
+  font-family: 'Pixelify Sans', monospace;
+  font-size: 17px;
+  line-height: 1.1;
+  color: var(--white);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .press-section { padding-top: 40px; }
+  .press-grid { grid-template-columns: 1fr; }
+  .press-title { position: relative; top: 0; left: 0; margin-bottom: 30px; }
+  .press-right-area { grid-template-columns: 1fr; margin-top: 0; }
+}
+
+@media (max-width: 650px) {
+  .press-spreads-four { grid-template-columns: 1fr; }
+}

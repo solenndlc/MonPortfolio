@@ -1,0 +1,53 @@
+.about-section {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+  z-index: 1;
+}
+
+/* ── Collage ── */
+
+.about-picture {
+  position: absolute;
+  width: 1100px;
+  top: 70px;
+  left: -50px;
+}
+
+/* ── Title column ── */
+.about-title-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+  z-index: 2;
+
+}
+
+.about-main-title {
+  line-height: 0.95;
+}
+
+/* ── Bio text ── */
+.about-bio {
+  padding-top: 40px;
+  font-family: 'Pixelify Sans', monospace;
+  font-size: 18px;
+  line-height: 1.0;
+  color: var(--white);
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-collage { height: 380px; margin-bottom: 20px; }
+  .about-title-col { flex-direction: row; gap: 0; }
+}

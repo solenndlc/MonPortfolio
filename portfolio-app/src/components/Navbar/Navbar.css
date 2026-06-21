@@ -1,0 +1,35 @@
+.navbar {
+  position: fixed;
+  top: 20;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 40px;
+  pointer-events: none;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  gap: 120px;
+  pointer-events: all;
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Pixelify Sans', monospace;
+  font-size: 20px;
+  color: var(--white);
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+  padding: 0;
+}
+
+.navbar button:hover {
+  color: var(--cyan);
+}

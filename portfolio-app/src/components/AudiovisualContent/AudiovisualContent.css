@@ -1,0 +1,83 @@
+.av-section { padding-top: 60px; padding-bottom: 80px; }
+
+.av-title {
+  position: relative;
+  left: 40%;
+  margin-bottom: 50px;
+}
+
+.av-content {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr; /* Donne un peu plus de place à la colonne vidéo */
+  gap: 60px; /* Augmente légèrement l'espace */
+  align-items: start;
+}
+
+/* ── Videos ── */
+.av-videos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px; /* Espace entre les deux vidéos */
+}
+
+.av-video-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre les éléments horizontalement */
+}
+
+/* Laptop frame trick */
+.av-laptop {
+  position: relative;
+  width: 130%; /* Augmente la taille du conteneur de 10% */
+  margin-left: -5%; /* Centre le laptop plus grand dans son conteneur */
+}
+
+.av-laptop-img {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.av-iframe-wrapper {
+  position: absolute;
+  /* Ajustements recalculés pour s'adapter au laptop agrandi */
+  top: 14%;
+  right: 23%;
+  width: 60%;
+  height: 66%;
+  z-index: 1;
+  overflow: hidden;
+  background: #000; /* Fond noir esthétique pendant le chargement */
+}
+
+.av-iframe-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover; /* Assure que la vidéo remplisse bien son conteneur */
+}
+
+/* ── Labels ── */
+.label-cyan {
+  margin-right: 35px;
+  font-size: 20px;
+  text-align: center; /* Centre le texte sur lui-même */
+}
+
+/* ── Description ── */
+.av-desc {
+  font-family: 'Pixelify Sans', monospace;
+  font-size: 18px;
+  line-height: 1.1;
+  color: var(--white);
+  padding-top: 10px;
+}
+
+@media (max-width: 900px) {
+  .av-content { grid-template-columns: 1fr; }
+  .av-videos  { grid-template-columns: 1fr; }
+  .av-laptop  { width: 100%; margin-left: 0; } /* Rétablit la taille sur mobile */
+}

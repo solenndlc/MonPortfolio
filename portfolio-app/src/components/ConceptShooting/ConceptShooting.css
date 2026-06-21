@@ -1,0 +1,51 @@
+.shooting-section { padding-top: 60px; padding-bottom: 80px; }
+
+.shooting-title { margin-bottom: 50px; }
+
+/* Two large side-by-side photos */
+.shooting-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.shooting-hero-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+/* 3-column photo grid + description */
+.shooting-bottom {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  align-items: start;
+  margin-top: 8px;
+}
+
+.shooting-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.shooting-grid-img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+
+.shooting-desc {
+  font-family: 'Pixelify Sans', monospace;
+  font-size: 21px;
+  line-height: 1.1;
+  color: var(--white);
+}
+
+@media (max-width: 900px) {
+  .shooting-hero   { grid-template-columns: 1fr; }
+  .shooting-bottom { grid-template-columns: 1fr; }
+  .shooting-grid   { grid-template-columns: repeat(2, 1fr); }
+}

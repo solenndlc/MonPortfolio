@@ -1,0 +1,26 @@
+.ticker-wrapper {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.ticker-track {
+  display: flex;
+  white-space: nowrap;
+  animation: ticker-scroll 18s linear infinite;
+}
+
+.ticker-track span {
+  font-family: 'DotGothic16', monospace;
+  font-size: 30px;
+  color: var(--cyan);
+  padding-right: 0;
+  flex-shrink: 0;
+}
+
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}

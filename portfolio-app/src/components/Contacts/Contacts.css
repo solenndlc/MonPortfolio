@@ -1,0 +1,42 @@
+.contacts-section {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.contacts-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 160px;
+}
+
+.contacts-title {
+  text-align: center;
+  justify-content: center;
+}
+
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: center;
+}
+
+.contacts-line {
+  font-family: 'Pixelify Sans', monospace;
+  font-size: 20px;
+  color: var(--white);
+}
+
+.contacts-link {
+  color: var(--cyan);
+  transition: opacity 0.2s;
+}
+
+.contacts-link:hover {
+  opacity: 0.7;
+}
