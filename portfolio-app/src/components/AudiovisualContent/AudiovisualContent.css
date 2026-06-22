@@ -44,10 +44,10 @@
 .av-iframe-wrapper {
   position: absolute;
   /* Ajustements recalculés pour s'adapter au laptop agrandi */
-  top: 14%;
-  right: 23%;
-  width: 60%;
-  height: 66%;
+  top: 13%;
+  right: 22%;
+  width: 61%;
+  height: 67%;
   z-index: 1;
   overflow: hidden;
   background: #000; /* Fond noir esthétique pendant le chargement */
