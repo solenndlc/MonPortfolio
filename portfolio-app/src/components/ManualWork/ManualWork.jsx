@@ -15,7 +15,7 @@ export default function ManualWork() {
 
       {/* ── Title ── */}
       <div className="manual-title">
-        <div className="deco-title" style={{ fontSize: '11vw' }}>
+        <div className="deco-title" style={{ fontSize: '10vw' }}>
           <span className="cap">M</span>
           <span className="didone">anual</span>
           <span className="cap" style={{ marginLeft: '0.2em' }}>W</span>

@@ -2,9 +2,9 @@
 
 .tools-top {
   display: grid;
-  grid-template-columns: 0.5fr 1fr;
+  grid-template-columns: 0.6fr 1fr;
   align-items: start;
-  margin-bottom: -120px;
+  margin-bottom: -110px;
 }
 
 .tools-title-col {
@@ -15,9 +15,9 @@
 .tools-text {
   font-family: 'Pixelify Sans', monospace;
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.1;
   color: var(--white);
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
 .tools-spread {
@@ -25,6 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  left: 3.5%;
 }
 
 .box-stage {

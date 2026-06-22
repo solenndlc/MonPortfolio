@@ -15,7 +15,7 @@ export default function ConceptShooting() {
 
       {/* ── Title ── */}
       <div className="shooting-title">
-        <div className="deco-title" style={{ fontSize: '11vw' }}>
+        <div className="deco-title" style={{ fontSize: '10vw' }}>
           <span className="cap">S</span>
           <span className="didone">hooting</span>
           <span className="cap" style={{ marginLeft: '0.2em' }}>C</span>

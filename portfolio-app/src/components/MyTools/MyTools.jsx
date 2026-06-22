@@ -33,13 +33,13 @@ export default function MyTools() {
     <section id="tools" className="section tools-section">
       <div className="tools-top">
         {/* ── Title ── */}
-        <div className="tools-title-col">
+        <div className="tools-title-col" style={{ marginLeft: '7vw' }}>
           <div className="deco-title" style={{ fontSize: '10vw' }}>
             <span className="cap">M</span>
             <span className="didone">es</span>
           </div>
           <div className="deco-title" style={{ fontSize: '10vw' }}>
-            <span className="cap">O</span>
+            <span className="cap" style={{ marginLeft: '0.4em' }}>O</span>
             <span className="didone">utils</span>
           </div>
         </div>
